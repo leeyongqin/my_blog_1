@@ -33,3 +33,12 @@ class Reviews(models.Model):
 
 class ItemAdmin(admin.ModelAdmin):
     list_display = ('asin', 'sku', 'title', 'brand', 'seller', 'description', 'timestamp', )
+
+
+class User(models.Model):
+    username = models.CharField(max_length=20, primary_key=True)
+    password = models.CharField(max_length=20, blank=False)
+
+    def __unicode__(self):
+        return self.username
+

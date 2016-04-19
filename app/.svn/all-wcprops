@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 28
+/853523500/!svn/ver/40/1/app
+END
+urls.py
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/853523500/!svn/ver/40/1/app/urls.py
+END
+settings.py
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/853523500/!svn/ver/40/1/app/settings.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/853523500/!svn/ver/3/1/app/__init__.py
+END
+wsgi.py
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/853523500/!svn/ver/10/1/app/wsgi.py
+END
