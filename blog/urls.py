@@ -3,8 +3,8 @@ from django.conf.urls import url, patterns
 
 
 urlpatterns = patterns('blog.views',
-    url(r'^blog', view='index', name='index'),
-    #url(r'^admin/', include(admin.site.urls)),
+    url(r'^blog/$', view='index', name='index'),
+
    )
 
 urlpatterns += staticfiles_urlpatterns()

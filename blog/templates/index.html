@@ -37,59 +37,15 @@
 
     <div class="row">
         <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+            {% for blog in blogs %}
             <ul  style="border-radius: 4px;background-color: white; padding-top: 4px; margin-top: 8px;padding-bottom: 4px">
-                <h4><a href="" style="color: #333;text-decoration: underline; padding-right: 4px">习近平：让互联网更好造福国家和人民</a></h4>
-                <p style="font-style: italic; padding-right: 6px">{{ post_time }}</p>
-                <p style="padding-right: 8px">
-                        中共中央总书记、国家主席、中央军委主席、中央网络安全和信息化领导小组组长习近平19日上午在京主持召开网络
-                    安全和信息化工作座谈会并发表重要讲话，强调按照创新、协调、绿色、开放、共享的发展理念推动我国经济社会发展，
-                    是当前和今后一个时期我国发展的总要求和大趋势，我国网信事业发展要适应这个大趋势，在践行新发展理念上
-                    先行一步，推进网络强国建设，推动我国网信事业发展，让互联网更好造福国家和人民。
+                <h4><a href="" style="color: #333;text-decoration: underline; padding-right: 4px">{{ blog.blog_title }}</a></h4>
+                <p style="font-style: italic; padding-right: 6px">{{ blog.blog_time }}</p>
+                <p style="padding-right: 18px">
+                        {{ blog.blog_body }}
                 </p>
             </ul>
-            <ul  style="border-radius: 4px;background-color: white; padding-top: 4px; margin-top: 8px;padding-bottom: 4px">
-                <h4><a href="" style="color: #333;text-decoration: underline">习近平：让互联网更好造福国家和人民</a></h4>
-                <p style="font-style: italic">{{ post_time }}</p>
-                <p>
-                        中共中央总书记、国家主席、中央军委主席、中央网络安全和信息化领导小组组长习近平19日上午在京主持召开网络
-                    安全和信息化工作座谈会并发表重要讲话，强调按照创新、协调、绿色、开放、共享的发展理念推动我国经济社会发展，
-                    是当前和今后一个时期我国发展的总要求和大趋势，我国网信事业发展要适应这个大趋势，在践行新发展理念上
-                    先行一步，推进网络强国建设，推动我国网信事业发展，让互联网更好造福国家和人民。
-                </p>
-            </ul>
-
-            <ul  style="border-radius: 4px;background-color: white; padding-top: 4px; margin-top: 8px;padding-bottom: 4px">
-                <h4><a href="" style="color: #333;text-decoration: underline">习近平：让互联网更好造福国家和人民</a></h4>
-                <p style="font-style: italic">{{ post_time }}</p>
-                <p>
-                        中共中央总书记、国家主席、中央军委主席、中央网络安全和信息化领导小组组长习近平19日上午在京主持召开网络
-                    安全和信息化工作座谈会并发表重要讲话，强调按照创新、协调、绿色、开放、共享的发展理念推动我国经济社会发展，
-                    是当前和今后一个时期我国发展的总要求和大趋势，我国网信事业发展要适应这个大趋势，在践行新发展理念上
-                    先行一步，推进网络强国建设，推动我国网信事业发展，让互联网更好造福国家和人民。
-                </p>
-            </ul>
-
-            <ul  style="border-radius: 4px;background-color: white; padding-top: 4px; margin-top: 8px;padding-bottom: 4px">
-                <h4><a href="" style="color: #333;text-decoration: underline">习近平：让互联网更好造福国家和人民</a></h4>
-                <p style="font-style: italic">{{ post_time }}</p>
-                <p style="padding-right: 4px">
-                        中共中央总书记、国家主席、中央军委主席、中央网络安全和信息化领导小组组长习近平19日上午在京主持召开网络
-                    安全和信息化工作座谈会并发表重要讲话，强调按照创新、协调、绿色、开放、共享的发展理念推动我国经济社会发展，
-                    是当前和今后一个时期我国发展的总要求和大趋势，我国网信事业发展要适应这个大趋势，在践行新发展理念上
-                    先行一步，推进网络强国建设，推动我国网信事业发展，让互联网更好造福国家和人民。
-                </p>
-            </ul>
-
-            <ul  style="border-radius: 4px;background-color: white; padding-top: 4px; margin-top: 8px;padding-bottom: 4px">
-                <h4><a href="" style="color: #333;text-decoration: underline">习近平：让互联网更好造福国家和人民</a></h4>
-                <p style="font-style: italic">{{ post_time }}</p>
-                <p>
-                        中共中央总书记、国家主席、中央军委主席、中央网络安全和信息化领导小组组长习近平19日上午在京主持召开网络
-                    安全和信息化工作座谈会并发表重要讲话，强调按照创新、协调、绿色、开放、共享的发展理念推动我国经济社会发展，
-                    是当前和今后一个时期我国发展的总要求和大趋势，我国网信事业发展要适应这个大趋势，在践行新发展理念上
-                    先行一步，推进网络强国建设，推动我国网信事业发展，让互联网更好造福国家和人民。
-                </p>
-            </ul>
+            {% endfor %}
         </div>
     </div>
 </div>

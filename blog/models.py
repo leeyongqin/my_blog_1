@@ -1,4 +1,5 @@
-from __future__ import unicode_literals
+# -*- coding: utf-8 -*-
+#from __future__ import unicode_literals
 from django.contrib import admin
 from django.db import models
 from django.utils.timezone import now
@@ -42,3 +43,14 @@ class User(models.Model):
     def __unicode__(self):
         return self.username
 
+
+class Blog(models.Model):
+    blog_title = models.CharField(max_length=100)
+    blog_time = now()
+    blog_body = models.TextField()
+
+    def __unicode__(self):
+        return self.blog_title
+
+class BlogAdmin(admin.ModelAdmin):
+    list_display = ('blog_title', 'blog_body', 'blog_time')
