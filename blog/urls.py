@@ -3,7 +3,7 @@ from django.conf.urls import url, patterns
 
 
 urlpatterns = patterns('blog.views',
-    url(r'^blog/$', view='index', name='index'),
+    url(r'', view='index', name='index'),
 
    )
 
